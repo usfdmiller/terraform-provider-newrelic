@@ -27,6 +27,7 @@ website/.vagrant
 website/build
 website/node_modules
 dist/*
+.devcontainer
 
 website/vendor
 
