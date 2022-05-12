@@ -223,7 +223,7 @@ func resourceNewRelicServiceLevelCreate(ctx context.Context, d *schema.ResourceD
 	_ = d.Set("sli_id", created.ID)
 	_ = d.Set("sli_guid", getSliGUID(&identifier))
 
-	time.Sleep(5 * time.Second)
+	time.Sleep(10 * time.Second)
 
 	return resourceNewRelicServiceLevelRead(ctx, d, meta)
 }
